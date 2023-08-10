@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,600;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,800;1,300;1,700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  height: 14vh;
+  width: calc(100vw - 10vw);
+  justify-content: space-between;
+  padding: 0 5vw 0 5vw;
+  background-color: rgba(0, 0, 0, 0.107);
+  position: absolute;
+  z-index: 101;
+}
+
+.header__container h1,
+.logo {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.5vw;
+}
+
+ul {
+  display: flex;
+  width: 30vw;
+  justify-content: space-between;
+}
+
+ul li,
+ul li a {
+  list-style: none;
+  color: rgba(255, 255, 255, 0.768);
+  font-size: 1.15vw;
+}
+
+a,
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+.social-container {
+  width: 15.2vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.8vw;
+  color: rgba(255, 255, 255, 0.652);
+}
+
+.social-container i {
+  cursor: pointer;
+}
+
+.main-screen__container {
+  width: calc(100vw);
+  height: 100vh;
+  position: relative;
+  background: url('../assets/pexels-suzy-hazelwood-1629236.jpg'),
+    rgba(0, 0, 0, 0.506);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-screen__darken {
+  width: 29vw;
+  height: 60vh;
+  background-color: rgba(0, 0, 0, 0.147);
+  border: none;
+  border-radius: 50% 50% 0 0;
+  position: absolute;
+  top: 25%;
+  left: 35.5%;
+}
+
+.main-screen__info-container {
+  height: 50vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.main-screen__info-container p,
+.main-screen__info-container h1,
+.main-screen__info-container button {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main-screen__info-container h1 {
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+.main-screen__info-container button {
+  width: 15vw;
+  height: 10vh;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-weight: lighter;
+}
+
+.main-screen__about-us {
+  width: 55vw;
+  height: 60vh;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.main-screen__about-us p {
+  line-height: 27px;
+}
+
+/* Style for the form container */
+.my-form {
+  width: 400px;
+  height: 60vh;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+}
+
+/* Style for input fields and text area */
+.input-field,
+.text-area {
+  width: 94%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+/* Style for the submit button */
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Hover effect for the submit button */
+.submit-button:hover {
+  background-color: #0056b3;
+}
